@@ -7,11 +7,16 @@ public class Stage : MonoBehaviour
     // ミノの座標を管理する二次元配列
     private Transform[,] grid;
 
+    // ステージのグリッドを描画するスプライト
     [SerializeField]
     private Transform emptySprite;
 
+    // ステージのプロパティ
     [SerializeField]
     private int height = 30, width = 10, header = 8;
+
+    // ミノを何列削除したかカウント
+    public int deletedRows = 0;
 
     private void Awake()
     {
@@ -82,6 +87,7 @@ public class Stage : MonoBehaviour
         }
     }
 
+    // 揃っている行のミノを全て消す
     public void ClearAllRows()
     {
         for (int y = 0; y < height; y++)
@@ -98,6 +104,7 @@ public class Stage : MonoBehaviour
         }
     }
 
+    // ミノが横一列に揃っているかを確認
     bool IsComplete(int y)
     {
         for (int x = 0; x < width; x++)
@@ -111,6 +118,7 @@ public class Stage : MonoBehaviour
         return true;
     }
 
+    // ミノが横一列に揃っていれば行のミノを消す．消した行数もカウント
     void ClearRow(int y)
     {
         for (int x = 0; x < width; x++)
@@ -118,6 +126,7 @@ public class Stage : MonoBehaviour
             if (grid[x, y] != null)
             {
                 Destroy(grid[x, y].gameObject);
+                deletedRows++;
             }
             grid[x, y] = null;
         }

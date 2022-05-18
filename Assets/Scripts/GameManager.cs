@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     Spawner spawner;
     Mino activeMino;
+    Score score;
 
     [SerializeField]
     private float dropInterval = 0.25f;
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
     {
         spawner = GameObject.FindObjectOfType<Spawner>();
         stage = GameObject.FindObjectOfType<Stage>();
+        score = GameObject.FindObjectOfType<Score>();
 
         spawner.transform.position = Rounding.Round(spawner.transform.position);
 
@@ -129,6 +131,8 @@ public class GameManager : MonoBehaviour
         nextKeyRotateTimer = Time.time;
 
         stage.ClearAllRows();
+        score.AddScore(stage.deletedRows);
+        stage.deletedRows = 0;
     }
 
     void GameOver()

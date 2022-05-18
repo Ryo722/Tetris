@@ -59,6 +59,7 @@
     <Compile Include="Assets/Scripts/Spawner.cs" />
     <Compile Include="Assets/Scripts/Rounding.cs" />
     <Compile Include="Assets/Scripts/Stage.cs" />
+    <Compile Include="Assets/Scripts/Score.cs" />
     <Compile Include="Assets/Scripts/Mino.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
   </ItemGroup>
@@ -648,6 +649,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
@@ -665,9 +669,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

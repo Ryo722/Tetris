@@ -1,22 +1,17 @@
 ﻿<Properties StartupConfiguration="{D2BFFF02-D087-DB1A-C7FE-6538A965A290}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Stage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Score.cs">
     <Files>
       <File FileName="Assets/Mino.cs" Line="20" Column="17" />
       <File FileName="Assets/Scripts/Spawner.cs" Line="7" Column="35" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="113" Column="18" />
       <File FileName="Assets/Scripts/Stage.cs" Line="152" Column="22" />
       <File FileName="Assets/Scripts/Rounding.cs" Line="14" Column="64" />
+      <File FileName="Assets/Scripts/Score.cs" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Tetris" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Stage.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="Tetris" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
